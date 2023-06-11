@@ -15,12 +15,17 @@ const inputItem = document.getElementById("input-text");
 const addItemBtn = document.getElementById("add-to-list");
 
 onValue(toDoListInDb,function(snapshot){
+    if(snapshot.exists()){
     clearHTML()
     let doArray = Object.entries(snapshot.val())
     for( let task of doArray){
         addTaskToHTML(task)
     }
+} else{
+    taskItem.innerHTML = `<div>Não tem nenhum item nessa lista...</div>`
+}
 })
+
 
 addItemBtn.addEventListener('click', function(){
     
