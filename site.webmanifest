@@ -1,0 +1,9 @@
+{"name":"To Work App",
+"short_name":"To Work App",
+"icons":[
+    {"src":"/android-chrome-192x192.png","sizes":"192x192","type":"/img/android-chrome-192x192.png"}
+    ,{"src":"/android-chrome-512x512.png","sizes":"512x512","type":"/img/android-chrome-512x512.png"}
+    ],
+    "theme_color":"#ffffff",
+    "background_color":"#e2e2e2",
+    "display":"standalone"}
